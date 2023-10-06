@@ -9,9 +9,9 @@ public class HowMany {
             System.out.println("Хоть что-то бы ввёл для приличия((");
             return;
         }
-        int b = 1;
+        int b = 0;
         for (int i = 0; i < input.length(); i++) {
-            if (input.charAt(i) == ' ') {
+            if (input.charAt(i) == ' ' && input.charAt(i+1) != ' ') {
                 b++;
             }
         }
