@@ -7,21 +7,33 @@ public class convertor {
         double dol = 0.0101;
         double eur = 0.0107;
         int i = 0;
-        Integer b = null;
+        int b = 0;
         while (i == 0) {
             System.out.println("Перевести в: 1 - доллар, 2 - евро");
-            b = a.nextInt();
+            if (a.hasNextInt()) {
+                b = a.nextInt();
+            }
+            else {
+                System.out.println("Ошибка: неверный ввод данных");
+                return;
+            }
             if ((b != 1) && (b != 2)) {
-                System.out.println("Ошибка: веверный ввод данных");
+                System.out.println("Ошибка: неверный ввод данных");
             }
             else {
                 i = 1;
             }
         }
-        Double c = null;
+        double c = 0;
         while (i == 1) {
             System.out.println("Рублей: ");
-            c = a.nextDouble();
+            if (a.hasNextDouble()) {
+                c = a.nextDouble();
+            }
+            else {
+                System.out.println("Ошибка: неверный ввод данных");
+                return;
+            }
             if (c < 0) {
                 System.out.println("Введите значение больше нуля");
             }
