@@ -22,15 +22,15 @@ public class Mat{
             System.out.println("Неправильно введёная матрица");
             return;
         }
-        for (int i = 0; i < 2; i++){
-            for (int j = 0; j < 2; j++){
+        for (int i = 0; i < str; i++){
+            for (int j = 0; j < sto; j++){
                 m[i][j] += n[i][j];
             }
         }
     }
     public static void mul(int g){
-        for (int i = 0; i < 2; i++){
-            for (int j = 0; j < 2; j++){
+        for (int i = 0; i < str; i++){
+            for (int j = 0; j < sto; j++){
                 m[i][j] *= g;
             }
         }
