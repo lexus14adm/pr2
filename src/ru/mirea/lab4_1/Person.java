@@ -11,14 +11,16 @@ public class Person
         System.out.println(fullName + " говорит");
     }
     public Person(){
-        this("Ничего",10);
+        /*this("Ничего",10);*/
     }
     public Person(String fullName, int age){
         this.fullName = fullName;
         this.age = age;
     }
     public static void main(String[] args){
-        Person person = new Person();
-        person.talk();
+        Person person1 = new Person("Ничего", 10);
+        person1.talk();
+        Person person2 = new Person();
+        person2.talk();
     }
 }
