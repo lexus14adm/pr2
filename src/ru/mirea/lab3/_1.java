@@ -12,10 +12,9 @@ public class _1 {
         }
         for (int i = mas.length / 2; i < mas.length; i++) {
             Random random = new Random();
-            mas[i] = random.nextDouble(10);
+            mas[i] = random.nextDouble() * 10;
             System.out.println(mas[i]);
         }
-
         System.out.println("\n");
         Arrays.sort(mas);
         for (int i = 0; i < mas.length; i++) {
